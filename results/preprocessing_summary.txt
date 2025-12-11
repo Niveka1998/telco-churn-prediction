@@ -1,0 +1,33 @@
+
+Data Preprocessing Completed
+============================
+
+Original Dataset:
+  - Rows: 7043
+  - Columns: 21  (including customerID)
+
+After Preprocessing:
+  -Rows: 7043
+  -Features: 19
+
+Preprocessing Steps Applied:
+  1.Handled 11 missing values in TotalCharges (median imputation)
+  2.Removed 0 duplicate rows
+  3.Dropped customerID (non-informative)
+  4.Encoded target variable (Yes->1, No->0)
+  5.Encoded 15 categorical features (Label Encoding)
+  6.Scaled all features (StandardScaler: mean=0, std=1)
+  7.Split data (80% train, 20% test) with stratification
+  8.Applied SMOTE to balance training data
+
+Final Dataset Shapes:
+  - Training Features (X_train): (8278, 19)
+  - Training Labels (y_train): (8278,)
+  - Test Features (X_test): (1409, 19)
+  - Test Labels (y_test): (1409,)
+
+Class Distribution:
+  - Original: 5174 No Churn, 1869 Churn
+  - Training (Before SMOTE): 4139 No Churn, 1495 Churn
+  - Training (After SMOTE): 4139 No Churn, 4139 Churn
+  - Test (Unchanged): 1035 No Churn, 374 Churn
