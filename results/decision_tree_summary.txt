@@ -1,0 +1,68 @@
+
+Decision tree classifier -summary report
+========================================
+Generated: 2025-12-12 04:52:36
+
+DATASET INFORMATION
+-------------------
+Training samples: 8278
+Test samples: 1409
+Number of features: 19
+Class distribution (test): [1035  374]
+
+HYPERPARAMETER TUNING
+---------------------
+Grid Search Configuration:
+  - Cross-validation folds: 5
+  - Scoring metric: F1-score
+  - Total combinations tested: 1344
+
+Best Hyperparameters:
+  - class_weight: None
+  - criterion: entropy
+  - max_depth: 10
+  - max_features: None
+  - min_samples_leaf: 1
+  - min_samples_split: 5
+
+Best CV F1-Score: 0.8117
+
+BASELINE MODEL PERFORMANCE
+--------------------------
+Accuracy:  0.7175
+Precision: 0.4729
+Recall:    0.5588
+F1-Score:  0.5123
+ROC-AUC:   0.6666
+
+CONFUSION MATRIX (Optimized)
+-----------------------------
+True Negatives:  803
+False Positives: 232
+False Negatives: 117
+True Positives:  257
+
+PERFORMANCE IMPROVEMENT
+-----------------------
+Accuracy:  +4.85%
+Precision: +11.15%
+Recall:    +22.97%
+F1-Score:  +16.27%
+ROC-AUC:   +18.33%
+
+TOP 5 MOST IMPORTANT FEATURES
+------------------------------
+       Feature  Importance
+      Contract    0.476399
+MonthlyCharges    0.105750
+        tenure    0.071856
+OnlineSecurity    0.065060
+ PaymentMethod    0.063357
+
+CROSS-VALIDATION RESULTS (10-Fold)
+-----------------------------------
+Mean F1-Score: 0.8140
+Std Deviation: 0.0472
+Min Score:     0.7491
+Max Score:     0.8747
+
