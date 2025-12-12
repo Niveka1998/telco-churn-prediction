@@ -1,0 +1,33 @@
+
+NEURAL NETWORK CLASSIFIER - SUMMARY REPORT
+==========================================
+Generated: 2025-12-12 11:28:22
+
+DATASET INFORMATION
+-------------------
+Training samples: 8278
+Test samples: 1409
+Number of features: 19
+Class distribution (test): [1035  374]
+
+NEURAL NETWORK ARCHITECTURE
+----------------------------
+Framework: TensorFlow/Keras 2.20.0
+Input dimension: 19
+
+Baseline Configuration:
+  - Hidden layers: [64, 32]
+  - Dropout rate: 0.3
+  - Learning rate: 0.001
+  - Batch size: 32
+
+HYPERPARAMETER TUNING
+---------------------
+Configurations tested: 13
+
+Best Configuration:
+  - Name: Baseline
+  - Hidden layers: [64, 32]
+  - Dropout rate: 0.3
+  - Learning rate: 0.001
+  - Batch size: 32
