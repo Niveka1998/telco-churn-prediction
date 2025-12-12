@@ -1,7 +1,7 @@
 
 NEURAL NETWORK CLASSIFIER - SUMMARY REPORT
 ==========================================
-Generated: 2025-12-12 18:47:50
+Generated: 2025-12-12 20:54:52
 
 DATASET INFORMATION
 -------------------
@@ -26,8 +26,8 @@ HYPERPARAMETER TUNING
 Configurations tested: 13
 
 Best Configuration:
-  - Name: Baseline
+  - Name: XL Batch
   - Hidden layers: [64, 32]
   - Dropout rate: 0.3
   - Learning rate: 0.001
-  - Batch size: 32
+  - Batch size: 128
